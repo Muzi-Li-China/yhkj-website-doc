@@ -1,6 +1,6 @@
 module.exports = {
   title: '个人主页',
-  description: '副标题',
+  description: '文档笔记',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/images/icon/touxiang.jpg' }],
     ['link', { rel: 'manifest', href: '/images/icon/touxiang.jpg' }],
