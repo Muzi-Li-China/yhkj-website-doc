@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/photo.jpg
+heroImage: /images/icon/muzili.png
 actionText: 快速上手 →
 actionLink: guide.html
 features:

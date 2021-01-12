@@ -98,6 +98,19 @@ module.exports = {
 完成了基础搭建后，就可以在docs目录下新建 `.md` 文件写文章了（.md 是 Markdown 语法文件，你需要知道 Markdown 的一些基本写法，很简单，这里给大家一份 [Markdown 语法整理大集合](https://www.jianshu.com/p/b03a8d7b1719)）
 
 下面给大家安利一些实用的方法。
+ 
+### vuepress热编译浏览器自动更新
+在`package.json`中将运行命令由
+``` js
+"dev":"vuepress dev docs"
+```
+改成
+``` js
+"dev":"vuepress dev docs --temp .temp"
+```
+即可解决
+> 附录:  
+  因为届时运行 `vuepress`会生成一个临时文件 `.temp`，可以在`.gitignore`中忽略掉该文件夹;
 
 ### 代码块高亮
 在 .md 文件中书写代码时，可在 \`\`\` 后增加 js、html、json等格式类型，代码块即可按照指定类型高亮
