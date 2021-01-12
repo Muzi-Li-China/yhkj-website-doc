@@ -17,11 +17,11 @@ module.exports = {
   themeConfig: {
     nav:[ // 导航栏配置
       {
-        text: '前端基础', 
+        text: '技术文档', 
       items:[
-        {text: '前端基础', link: '/accumulate/'},
-        {text: '算法题库', link: '/algorithm/'},
-        {text: '诗和远方', link: '/others/'}
+        {text: 'git', link: '/technology/git/'},
+        // {text: '算法题库', link: '/algorithm/'},
+        // {text: '诗和远方', link: '/others/'}
       ]
     },
       {text: '微博', link: 'https://baidu.com'}      
