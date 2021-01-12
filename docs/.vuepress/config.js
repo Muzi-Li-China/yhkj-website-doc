@@ -16,15 +16,16 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
+      {text: '快速上手', link: '/guide.md'},  
       {
         text: '技术文档', 
       items:[
-        {text: 'git', link: '/technology/git/'},
+        {text: 'Git', link: '/technology/Git/'},
         // {text: '算法题库', link: '/algorithm/'},
         // {text: '诗和远方', link: '/others/'}
       ]
     },
-      {text: '微博', link: 'https://baidu.com'}      
+      // {text: '微博', link: 'https://baidu.com'}      
     ],
     sidebar: 'auto', // 侧边栏配置
     sidebarDepth: 2
