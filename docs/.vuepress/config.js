@@ -37,41 +37,37 @@ module.exports= ctx =>({
          ]
         }
        ],
-      '/zh/technology/stylelint/': [
-         {
-          title: 'stylelint',
-          collapsable:false,
-          children:[
-            '',
-            'install',
-            'options',
-            'options-all',
-            'options-zh',
-          ]
-         }
-        ],
-      '/zh/technology/Prettier/': [
-        {
-          title: 'Prettier',
-          collapsable:false,
-          children:[
-            '',
-            "install",
-            "options",
-            'options-all',
-          ]
-        }
-      ],
-      '/zh/technology/Eslint/': [
+      '/zh/technology/': [
         {
           title: 'Eslint',
           collapsable:false,
           children:[
-            '',
-            "options",
-            'lint',
+            'Eslint/',
+            "Eslint/options",
+            'Eslint/lint',
           ]
-        }
+        },
+        {
+          title: 'Prettier',
+          collapsable:false,
+          children:[
+            'Prettier/',
+            "Prettier/install",
+            "Prettier/options",
+            'Prettier/options-all',
+          ]
+        },
+        {
+          title: 'stylelint',
+          collapsable:false,
+          children:[
+            'stylelint/',
+            'stylelint/install',
+            'stylelint/options',
+            'stylelint/options-all',
+            'stylelint/options-zh',
+          ]
+         }
       ],
     },
     // 监听任何想监听的文件，

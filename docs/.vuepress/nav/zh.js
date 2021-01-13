@@ -24,16 +24,8 @@ module.exports = [
         link: '/zh/technology/Git/'
       },
       {
-        text: 'Eslint',
+        text: 'Lint',
         link:'/zh/technology/Eslint/'
-      },
-      {
-        text: 'stylelint', 
-        link: '/zh/technology/stylelint/'
-      },
-      {
-        text: 'Prettier',
-        link:'/zh/technology/Prettier/'
       },
     ]
   },
