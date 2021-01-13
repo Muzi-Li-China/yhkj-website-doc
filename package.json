@@ -1,17 +1,16 @@
 {
-  "name": "vuepressBlog",
+  "name": "MuziLiDocs",
   "version": "1.0.0",
-  "description": "",
+  "description": "笔记文档",
   "main": "index.js",
+  "repository": "git@github.com:Muzi-Li-China/yhkj-website-doc.git",
+  "author": "muzili <1537080775@qq.com>",
+  "license": "MIT",
   "scripts": {
     "serve": "vuepress dev docs --temp .temp",
-    "build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "build": "vuepress build docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "vuepress": "^0.14.4"
+  "devDependencies": {
+    "vuepress": "^1.8.0"
   }
 }

@@ -1,12 +1,11 @@
 
 
-module.exports = {
+module.exports= ctx =>({
   title: '个人主页',
   description: '文档笔记',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/images/icon/touxiang.jpg' }],
-    ['link', { rel: 'manifest', href: '/images/icon/touxiang.jpg' }],
-    ['link', { rel: 'apple-touch-icon', href: '/images/icon/touxiang.jpg' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache'}],
     ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache,must-revalidate'}],
     ['meta', { 'http-quiv': 'expires', cotent: '0'}]
@@ -21,7 +20,7 @@ module.exports = {
     // 全文搜索
     // algolia: ctx.isProd ? ({
     //   apiKey: '3a539aab83105f01761a137c61004d85',
-    //   indexName: 'vuepress'
+    //   indexName: 'MuziLiDocs'
     // }) : null,
 
     // 页面滚动
@@ -44,12 +43,36 @@ module.exports = {
           collapsable:false,
           children:[
             '',
-            'rules',
-            'details-rules',
-            'details-zh',
+            'install',
+            'options',
+            'options-all',
+            'options-zh',
           ]
          }
         ],
+      '/zh/technology/Prettier/': [
+        {
+          title: 'Prettier',
+          collapsable:false,
+          children:[
+            '',
+            "install",
+            "options",
+            'options-all',
+          ]
+        }
+      ],
+      '/zh/technology/Eslint/': [
+        {
+          title: 'Eslint',
+          collapsable:false,
+          children:[
+            '',
+            "options",
+            'lint',
+          ]
+        }
+      ],
     },
     // 监听任何想监听的文件，
     // 文件变动将会触发 vuepress 重新构建，并实时更新。
@@ -57,6 +80,6 @@ module.exports = {
       '.vuepress/nav/zh.js'
     ]
   }
-};
+});
 
 

@@ -6,6 +6,7 @@
 
 本栏的主要内容如下：
 
-- [配置文件](./rules.md)
+- [安装](./install.md)
+- [配置文件](./options.md)
 - [详尽的配置规则](./details-rules.md)
 - [规则参考列表（中文）](./details-zh.md)

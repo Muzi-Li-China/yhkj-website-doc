@@ -37,14 +37,14 @@ VuePress 有很多优点：
 
     mkdir vuepressBlogDemo
 
-### 全局安装 VuePress
+### 使用你喜欢的包管理器进行初始化
 
-    npm install -g vuepress
+    yarn init # npm init
 
-### 进入 vuepressBlogDemo 文件夹，初始化项目
-使用 `npm init` 或 `npm init -y`（默认yes）
+### 将 VuePress 安装为本地依赖
+我们已经不再推荐全局安装 VuePress
 
-    npm init -y
+    yarn add -D vuepress # npm install -D vuepress
 
 ### 创建文件夹和文件
 在 vuepressBlogDemo 文件夹中创建 docs 文件夹，在 docs 中创建 .vuepress 文件夹，在.vuepress中创建 public 文件夹和 config.js 文件，最终项目结构如下所示：

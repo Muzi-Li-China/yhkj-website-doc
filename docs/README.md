@@ -27,6 +27,28 @@ this is a tip
 this is a tip
 :::
 
+::: vue
+theme
+├── `global-components`
+│   └── xxx.vue
+├── `components`
+│   └── xxx.vue
+├── `layouts`
+│   ├── Layout.vue _(**必要的**)_
+│   └── 404.vue
+├── `styles`
+│   ├── index.styl
+│   └── palette.styl
+├── `templates`
+│   ├── dev.html
+│   └── ssr.html
+├── `index.js`
+├── `enhanceApp.js`
+└── package.json
+:::
+
+<Badge text="package.json" vertical="middle"/> 
+
 ``` js
 <script>
 	console.log('Hello world')
