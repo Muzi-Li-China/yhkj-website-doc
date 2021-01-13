@@ -1,3 +1,5 @@
+
+
 module.exports = {
   title: '个人主页',
   description: '文档笔记',
@@ -15,26 +17,37 @@ module.exports = {
     lineNumbers: true // 代码块是否显示行号
   },
   themeConfig: {
-    nav:[ // 导航栏配置
-      {text: '快速上手', link: '/guide.md'},  
-      {
-        text: '项目文档', 
-        items:[
-          {text: '工作日志', link: '/admin-project/job-record/'},
-        ]
-      },
-      {
-        text: '技术文档', 
-        items:[
-          {text: 'Git', link: '/technology/Git/'},
-          {text: 'stylelint', link: '/technology/stylelint/'},
-          // {text: '算法题库', link: '/algorithm/'},
-          // {text: '诗和远方', link: '/others/'}
-        ]
-      },
-      // {text: '微博', link: 'https://baidu.com'}      
-    ],
-    sidebar: 'auto', // 侧边栏配置
-    sidebarDepth: 2
+    // #697 Provided by the official algolia team.
+    // 全文搜索
+    // algolia: ctx.isProd ? ({
+    //   apiKey: '3a539aab83105f01761a137c61004d85',
+    //   indexName: 'vuepress'
+    // }) : null,
+
+    // 页面滚动
+    smoothScroll: true,
+    lastUpdated: '上次更新',
+    nav: require('./nav/zh'),
+    sidebar: {
+      '/zh/technology/stylelint/': [
+         {
+          title: 'stylelint',
+          collapsable:false,
+          children:[
+            '',
+            'rules',
+            'details-rules',
+            'details-zh',
+          ]
+         }
+        ],
+    },
+    // 监听任何想监听的文件，
+    // 文件变动将会触发 vuepress 重新构建，并实时更新。
+    extraWatchFiles: [
+      '.vuepress/nav/zh.js'
+    ]
   }
 };
+
+

@@ -1,10 +1,4 @@
----
-title: 分布式版本控制系统
-sidebar: auto
-sidebarDepth: 2
----
-
-# 分布式版本控制系统
+# Git
 
 ## 初始化
 ``` js
