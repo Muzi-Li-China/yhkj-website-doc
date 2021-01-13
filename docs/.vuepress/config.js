@@ -29,6 +29,15 @@ module.exports = {
     lastUpdated: '上次更新',
     nav: require('./nav/zh'),
     sidebar: {
+      '/zh/technology/Git/': [
+        {
+         title: 'Git',
+         collapsable:false,
+         children:[
+           ''
+         ]
+        }
+       ],
       '/zh/technology/stylelint/': [
          {
           title: 'stylelint',
